@@ -41,6 +41,8 @@ jobs:
       - run: dotnet build Api.Tests
       - run: dotnet test Api.Tests --no-build
 
+      # Test Commit
+      
 # Lab 3: Define jobs — each group of steps below needs to be wrapped
 # in a proper job with runs-on, defaults (working-directory), and steps.
 # The steps themselves are ready to go — you just need the structure around them.
