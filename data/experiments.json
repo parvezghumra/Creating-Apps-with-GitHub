@@ -16,5 +16,14 @@
     "actual": "Gave a good explanation but the example used deprecated Express 3 syntax",
     "verdict": "Surprising",
     "timestamp": "2026-03-16T10:15:00Z"
+  },
+  {
+    "id": "exp-a8e2854c",
+    "tool": "Codespaces",
+    "task": "ECS 2026 workshop",
+    "expected": "Learn cool things",
+    "actual": "Learnt cooler things",
+    "verdict": "Surprising",
+    "timestamp": "2026-05-05T08:43:57.6325173Z"
   }
 ]

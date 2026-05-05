@@ -12,7 +12,8 @@
       "extensions": [
         "GitHub.copilot",
         "GitHub.copilot-chat",
-        "ms-dotnettools.csdevkit"
+        "ms-dotnettools.csdevkit",
+        "microsoft-isvexptools.powerplatform-vscode"
       ],
       "settings": {
         "editor.formatOnSave": true
