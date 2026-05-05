@@ -16,7 +16,8 @@
         "microsoft-isvexptools.powerplatform-vscode"
       ],
       "settings": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": false
       }
     }
   },
