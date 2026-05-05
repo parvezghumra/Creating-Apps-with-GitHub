@@ -40,9 +40,37 @@ jobs:
       - run: dotnet build
       - run: dotnet build Api.Tests
       - run: dotnet test Api.Tests --no-build
+  
+  node:
+    name: Node.js
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: node
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm test
+  
+  python:
+    name: Python
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest --tb=short    
 
       # Test Commit
-      
+
 # Lab 3: Define jobs — each group of steps below needs to be wrapped
 # in a proper job with runs-on, defaults (working-directory), and steps.
 # The steps themselves are ready to go — you just need the structure around them.
