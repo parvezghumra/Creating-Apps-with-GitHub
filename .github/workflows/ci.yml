@@ -37,8 +37,8 @@ jobs:
         with:
           dotnet-version: "10.x"
       - run: dotnet restore
-      - run: dotnet build --no-restore
-      - run: dotnet build Api.Tests --no-restore
+      - run: dotnet build
+      - run: dotnet build Api.Tests
       - run: dotnet test Api.Tests --no-build
 
 # Lab 3: Define jobs — each group of steps below needs to be wrapped
