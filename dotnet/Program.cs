@@ -79,7 +79,7 @@ app.MapPost("/entries", async (HttpRequest request) =>
     experiments.Add(newEntry);
     WriteExperiments(experiments);
     return Results.Created($"/entries/{newEntry["id"]}", newEntry);
-});
+);
 
 // GET /summary — aggregated experiment data
 // Returns a JSON object with this shape:
